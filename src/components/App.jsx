@@ -10,8 +10,8 @@ import ChampionList from './ChampionList';
 export default function App(){
 
   function importAll(r){
-    let images = {}
-    r.keys().map((item, index) => { images[item.replace('../', '')] = r(item); });
+    let images = {};
+    r.keys().map((item) => { images[item.replace('../', '')] = r(item); });
     return images;
   }
   const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
@@ -41,6 +41,21 @@ export default function App(){
       image: images['./Yasuo.png'],
       name: 'Yasuo, the Unforgiven',
       role: 'Figher'
+    },
+    {
+      image: images['./Evelynn.png'],
+      name: 'Evelynn, Agony\'s Embrace',
+      role: 'Assassin'
+    },
+    {
+      image: images['./AurelionSol.png'],
+      name: 'Aurelion Sol, the Star Forger',
+      role: 'Mage'
+    },
+    {
+      image: images['./Illaoi.png'],
+      name: 'Illaoi, the Kraken Priestess',
+      role: 'Fighter'
     }
   ];
 
