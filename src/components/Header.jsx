@@ -18,5 +18,5 @@ export default function Header(){
         <Link to='/'>Home</Link> | <Link to='/newchampion'>New Champion</Link>
       </div>
     </div>
-  )
+  );
 }
