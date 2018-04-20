@@ -28,5 +28,5 @@ export default function ChampionList(props){
 }
 
 ChampionList.propTypes = {
-  championList = PropTypes.array
+  championList: PropTypes.array
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function NewTicketForm(){
+export default function NewTicketForm(){
   let _image = null;
   let _name = null;
   let _role = null;
