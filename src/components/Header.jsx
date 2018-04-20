@@ -5,7 +5,9 @@ export default function Header(){
   return (
     <div>
       <style jsx>{`
-
+          .header{
+            text-align: center;
+          }
 
 
 

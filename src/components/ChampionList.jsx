@@ -14,6 +14,7 @@ export default function ChampionList(props){
 
 
       `}</style>
+      <h1>Here are some of the many champions in the League!</h1>
       <div className='container'>
         <div className='box'>
           {props.championList.map((champ, index)=>
