@@ -12,7 +12,10 @@ export default function Footer(){
           width: 100%;
           background-color: #0E0D12;
           font-family: monospace;
+          text-align: center;
+          font-size: 30px;
           text-shadow: 0px 0px 5px white;
+          color: white;
         }
       `}</style>
       <div className='footer'>

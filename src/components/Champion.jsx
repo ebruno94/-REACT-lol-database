@@ -17,4 +17,4 @@ Champion.propTypes={
   image: PropTypes.string,
   name: PropTypes.name,
   role: PropTypes.role
-}
+};

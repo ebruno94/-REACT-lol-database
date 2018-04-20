@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Champion from './Champion';
 
 export default function ChampionList(props){
   return(
