@@ -6,7 +6,14 @@ import NewChampionForm from './NewChampionForm';
 import Error404 from './Error404';
 import ChampionList from './ChampionList';
 
+
 export default function App(){
+
+  function importAll(r){
+    return r.keys().map(r);
+  }
+  const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
+  
   let masterChampionList = [
     {}
   ];
