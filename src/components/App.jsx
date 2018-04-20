@@ -5,6 +5,7 @@ import Footer from './Footer';
 import NewChampionForm from './NewChampionForm';
 import Error404 from './Error404';
 import ChampionList from './ChampionList';
+import {bg} from '../assets/images/bg.png';
 
 
 export default function App(){
@@ -64,12 +65,15 @@ export default function App(){
       <style jsx global>{`
           html{
             padding: 100px;
+            background-image: url(${bg});
           }
 
           body{
             font-family: monospace;
             border: 2px solid black;
             padding: 50px;
+            box-shadow: 0px 0px 15px black;
+            background: white;
           }
 
 
@@ -78,7 +82,7 @@ export default function App(){
       <Switch>
         <Route exact path='/' render={()=><ChampionList championList={masterChampionList}/>}/>
         <Route path='/newchampion' render={()=><NewChampionForm/>} />
-        <Route component={<Error404/>} />
+        <Route component={Error404} />
       </Switch>
       <Footer/>
     </div>

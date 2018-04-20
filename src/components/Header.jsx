@@ -17,6 +17,7 @@ export default function Header(){
       `}</style>
       <div className="header">
         <h1>Game Spotlight</h1>
+        <hr/>
         <Link to='/'>Home</Link> | <Link to='/newchampion'>New Champion</Link>
       </div>
     </div>
