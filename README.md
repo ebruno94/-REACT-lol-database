@@ -12,7 +12,7 @@ A website / program that displays some of the champions in the famous Multiplaye
 
 ## Project Structure
 
-![alt text](https://drive.google.com/file/d/1awNiDl0pd9UnAjVxkyRI7OW-LDhH5KMz/view?usp=sharing)
+![alt text](https://github.com/ebruno94/-REACT-lol-database/blob/master/src/assets/images/lolchamplist-react.png)
 
 
 ## Setup/Installation Requirements
