@@ -5,7 +5,6 @@ import Footer from './Footer';
 import NewChampionForm from './NewChampionForm';
 import Error404 from './Error404';
 import ChampionList from './ChampionList';
-import {bg} from '../assets/images/bg.png';
 
 
 export default function App(){
@@ -65,7 +64,8 @@ export default function App(){
       <style jsx global>{`
           html{
             padding: 100px;
-            background-image: url(${bg});
+            background-image: url(${images['./bg']});
+            background: lightgray;
           }
 
           body{
@@ -76,6 +76,15 @@ export default function App(){
             background: white;
           }
 
+          button{
+            font-size: 20px;
+            font-weight: bold;
+            background: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            color: white;
+          }
 
       `}</style>
       <Header/>

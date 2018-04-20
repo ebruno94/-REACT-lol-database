@@ -15,24 +15,39 @@ export default function NewTicketForm(){
 
   return(
     <div>
-      <h1>Fill out the form below with the necessary information</h1>
+      <style jsx>
+      {`
+        .title{
+          text-align: center;
+        }
+
+        label{
+          font-size: 20px;
+        }
+
+      `}
+      </style>
+      <h1 className='title'>Fill out the form below with the necessary information</h1>
       <hr/>
       <form onSubmit={handleSubmission}>
+        <label>Image URL path</label>
         <input
           type='text'
           id='image'
           placeholder='Image URL path'
-          ref={(input) => {_image = input;}}/>
+          ref={(input) => {_image = input;}}/> <br/><br/>
+        <label>Name</label>
         <input
           type='text'
           id='name'
           placeholder='Champion Name'
-          ref={(input) => {_name = input;}}/>
+          ref={(input) => {_name = input;}}/> <br/><br/>
+        <label>Role</label>
         <input
           type='text'
           id='name'
           placeholder='Role'
-          ref={(input) => {_role = input;}}/>
+          ref={(input) => {_role = input;}}/><br/><br/>
         <button type='submit'>Add</button>
       </form>
     </div>

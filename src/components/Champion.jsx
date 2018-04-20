@@ -15,6 +15,6 @@ export default function Champion(props){
 
 Champion.propTypes={
   image: PropTypes.string,
-  name: PropTypes.name,
-  role: PropTypes.role
+  name: PropTypes.string,
+  role: PropTypes.string
 };
